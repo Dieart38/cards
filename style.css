@@ -54,6 +54,7 @@ body{
 .bg{
     border: 3px solid rgb(89, 133, 236);
     background-image: url(img/seya.jpg);
+    background-repeat: no-repeat;
     background-position: center center;
     width: auto;
 }
@@ -61,6 +62,7 @@ body{
 .bg2{
     border: 3px solid green;
     background-image: url(img/shyriu.jpg);
+    background-repeat: no-repeat;
     background-position: center center;
     width: auto;
 }
@@ -68,6 +70,7 @@ body{
 .bg3{
     border: 3px solid rgb(37, 201, 193);
     background-image: url(img/hyoga.jpg);
+    background-repeat: no-repeat;
     background-position: center center;
     width: auto;
 }
@@ -75,12 +78,14 @@ body{
 .bg4{
     border: 3px solid rgb(237, 37, 174);
     background-image: url(img/shun.jpg);
+    background-repeat: no-repeat;
     background-position: center center;
     width: auto;
 }
 .bg5{
     border: 3px solid rgb(237, 37, 37);
     background-image: url(img/ikki.jpg);
+    background-repeat: no-repeat;
     background-position: -18px -10px;
     /* background-position: center center; */
     width: auto;
@@ -216,4 +221,54 @@ body{
 }
 .huebox5{
     filter: hue-rotate(30deg);
+}
+/* Media Queries para telas menores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .parent {
+        width: 100%;
+        height: auto;
+    }
+
+    .card {
+        padding-top: 50px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-content {
+        font-size: 10px;
+    }
+
+    .see-more {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 0;
+    }
+
+    .card {
+        padding-top: 30px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-content {
+        font-size: 8px;
+    }
+
+    .see-more {
+        font-size: 8px;
+    }
 }
